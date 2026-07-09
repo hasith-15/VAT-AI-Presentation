@@ -52,7 +52,7 @@ const Slide15 = () => {
           boxShadow: '0 5px 15px rgba(0,0,0,0.3)'
         }}>
           <img 
-            src="/qr.png" 
+            src="/qr.jpg" 
             alt="WhatsApp QR Code" 
             style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
             onError={(e) => {
@@ -61,7 +61,7 @@ const Slide15 = () => {
             }}
           />
           <div style={{ display: 'none', width: '100%', height: '100%', textAlign: 'center', color: '#000', alignContent: 'center' }}>
-            Please add qr.png to public folder
+            Please add qr.jpg to public folder
           </div>
         </div>
       </motion.div>
