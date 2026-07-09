@@ -33,8 +33,8 @@ const Slide15 = () => {
           <p style={{ fontSize: '1.5rem', color: 'var(--accent)', fontWeight: 'bold', marginBottom: '30px' }}>Let's give your business wings.</p>
           
           <div style={{ fontSize: '1.2rem', display: 'flex', flexDirection: 'column', gap: '15px' }}>
-            <p style={{ margin: 0 }}><strong>Phone:</strong> +91 98765 43210</p>
-            <p style={{ margin: 0 }}><strong>Email:</strong> contact@vat-ai.com</p>
+            <p style={{ margin: 0 }}><strong>Phone:</strong> +918500416456</p>
+            <p style={{ margin: 0 }}><strong>Email:</strong> hasithvippala15@gmail.com</p>
             <p style={{ margin: 0 }}><strong>Website:</strong> www.vat-ai.com</p>
           </div>
         </div>
@@ -48,26 +48,20 @@ const Slide15 = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          boxShadow: '0 5px 15px rgba(0,0,0,0.3)'
         }}>
-          {/* Using a placeholder for QR code since we don't have the real path yet */}
-          <div style={{
-            width: '100%',
-            height: '100%',
-            background: 'url(/qr.png) no-repeat center center',
-            backgroundSize: 'cover'
-          }}>
-            <svg viewBox="0 0 100 100" style={{ width: '100%', height: '100%' }}>
-               <rect width="100" height="100" fill="#fff" />
-               <path d="M10 10 h30 v30 h-30 z M15 15 h20 v20 h-20 z" fill="#000" />
-               <path d="M60 10 h30 v30 h-30 z M65 15 h20 v20 h-20 z" fill="#000" />
-               <path d="M10 60 h30 v30 h-30 z M15 65 h20 v20 h-20 z" fill="#000" />
-               <rect x="50" y="50" width="10" height="10" fill="#000" />
-               <rect x="70" y="50" width="10" height="10" fill="#000" />
-               <rect x="60" y="70" width="10" height="10" fill="#000" />
-               <rect x="80" y="80" width="10" height="10" fill="#000" />
-               <text x="50" y="95" fontSize="8" fill="#000">Scan to chat</text>
-            </svg>
+          <img 
+            src="/qr.png" 
+            alt="WhatsApp QR Code" 
+            style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'block';
+            }}
+          />
+          <div style={{ display: 'none', width: '100%', height: '100%', textAlign: 'center', color: '#000', alignContent: 'center' }}>
+            Please add qr.png to public folder
           </div>
         </div>
       </motion.div>
