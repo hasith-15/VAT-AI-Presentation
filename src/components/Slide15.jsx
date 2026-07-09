@@ -52,7 +52,7 @@ const Slide15 = () => {
           boxShadow: '0 5px 15px rgba(0,0,0,0.3)'
         }}>
           <img 
-            src="/qr.jpg" 
+            src="/qr.jpg?v=2" 
             alt="WhatsApp QR Code" 
             style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
             onError={(e) => {
