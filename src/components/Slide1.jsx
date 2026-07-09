@@ -75,14 +75,6 @@ const Slide1 = () => {
       
       <div style={{ width: '50px', height: '2px', background: 'var(--primary)', margin: '2rem auto' }} />
       
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        style={{ fontStyle: 'italic', fontSize: '1.2rem' }}
-      >
-        Presented by Vippala Venkata Hasith Reddy
-      </motion.p>
     </div>
   );
 };
